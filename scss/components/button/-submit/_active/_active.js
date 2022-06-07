@@ -7,17 +7,17 @@ const displayOutput = () => {
   // check the current target
   // if the rate button is clicked get its value and store it in a variable
   // otherwise set the rate to null and return the function
-  body.onclick = function(e) {
+  body.onclick = function (e) {
     if (
-        e.target.nodeName === "INPUT" &&
-        e.target.getAttributeNode("type").value === "button"
-        ) {
+      e.target.nodeName === "INPUT" &&
+      e.target.getAttributeNode("type").value === "button"
+    ) {
       rate = e.target.value;
     } else {
       rate = null;
       return;
     }
-  }
+  };
 
   submitBtn.addEventListener("click", getRate);
 
@@ -25,7 +25,9 @@ const displayOutput = () => {
   // exit the function
   // else replace card content
   function getRate() {
-    if (rate === null) { return };
+    if (rate === null) {
+      return;
+    }
     replaceCardContent();
   }
 
@@ -48,7 +50,7 @@ const displayOutput = () => {
     // display selected value
     document.querySelector("[data-rate]").innerText = rate;
   }
-}
+};
 displayOutput();
 
 export { displayOutput };

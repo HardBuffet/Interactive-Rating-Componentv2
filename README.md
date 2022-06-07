@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/final-project.desktop.png)
+![](./images/final-project-desktop.png)
 
 ### Links
 
 - Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://hardbuffet.github.io/name-app/)
+- Live Site URL: [GitHub Pages](https://hardbuffet.github.io/Interactive-Rating-Componentv2/)
 
 ## My process
 
