@@ -75,6 +75,17 @@ p {
   border-radius: clamp(0.94em, 0.61em + 1.41vw, 1.88em);
 }
 
+.card-feedback__output {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.card-feedback__text {
+  display: block;
+}
+
 .card-feedback__buttons {
   display: flex;
   justify-content: space-between;
@@ -85,6 +96,12 @@ p {
   flex-direction: column;
   gap: 30px;
   margin-top: 1em;
+}
+
+.card-feedback__greetings {
+  padding-block: 2.5em;
+  text-align: center;
+  justify-content: center;
 }
 
 .icon-star {
@@ -169,6 +186,23 @@ p {
 .attribution__note {
   font-size: 0.9rem;
   line-height: 1.5rem;
+}
+
+.utilities_bg_medium-grey {
+  background: #252d37;
+}
+
+.utilities_color_orange {
+  color: #fb7413;
+}
+
+.utilities_pad-1 {
+  padding-block: 0.25em;
+  padding-inline: 1.2em;
+}
+
+.utilities_radius-1 {
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

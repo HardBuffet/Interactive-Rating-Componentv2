@@ -1,0 +1,7 @@
+.card {
+  &-feedback {
+    &__output {
+      @include flex($dir: true, $ai: true, $gap: true, $gapVal: 2em);
+    }
+  }
+}

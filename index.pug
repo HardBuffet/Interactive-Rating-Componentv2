@@ -6,21 +6,26 @@ html(lang='en')
     title Frontend Mentor | Interactive rating component
     link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
     link(rel="stylesheet" href="assets/css/styles.css")
-    script(src="js/script.js" defer)
+    script(src="js/script.js" type="module")
   body.page
     header
       h1.sr-only Give us feedback.
     main
       .card-feedback
-        template
+        template(data-card-output)
           .card-feedback__output
-            img(src="images/illustration-thank-you.svg" alt="")
-            p.utilities.utilities_color_orange.utilities_bg_medium-grey.utilities_pad-1 You selected 4 out of 5
+            img(src="images/illustration-thank-you.svg" alt="" width="162" height="108")
+            p.utilities.utilities_color_orange.utilities_bg_medium-grey.utilities_pad-1.utilities_radius-1 You selected
+              |
+              |
+              span(data-rate) 4
+              |
+              | out of 5
           .card-feedback__text
             h2 Thank you!
             p We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
         .icon-star
-          img(src="images/icon-star.svg" alt="")
+          img(src="images/icon-star.svg" alt="" width="17" height="16")
         .card-feedback__text
           h2 How did we do?
           p Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
@@ -31,7 +36,7 @@ html(lang='en')
             input(type="button" value="3").button-rate.button-rate_hover.button-rate_focus
             input(type="button" value="4").button-rate.button-rate_hover.button-rate_focus
             input(type="button" value="5").button-rate.button-rate_hover.button-rate_focus
-          input(type="submit" value="SUBMIT").button-submit.button-submit_hover
+          input(type="submit" value="SUBMIT").button-submit.button-submit_hover.button-submit_active
       footer.attribution.page__attribution
         p.attribution__note Challenge by
           |

@@ -1,0 +1,15 @@
+.card {
+  &-feedback {
+    &__greetings {
+      padding: {
+        block: 2.5em;
+      }
+      text: {
+        align: center;
+      }
+      justify: {
+        content: center;
+      }
+    }
+  }
+}
