@@ -1,0 +1,10 @@
+.card {
+  &-feedback {
+    &__form {
+      @include flex($dir: true, $gap: true, $gapVal: 30px);
+      margin: {
+        top: 1em;
+      }
+    }
+  }
+}

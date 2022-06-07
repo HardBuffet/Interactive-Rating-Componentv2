@@ -4,3 +4,24 @@
 @import "__output/__output";
 @import "__text/__text";
 @import "__buttons/__buttons";
+@import "__form/__form";
+
+// ****************************************************************************
+// *                               002.#CARD-FEEDBACK                         *
+// ****************************************************************************
+.card {
+  &-feedback {
+    @include flex($dir: true, $gap: true, $gapVal: 0.8em);
+    background: $cardFeedbackBg;
+    width: 20.63rem;
+    width: clamp(20.63rem, 18.64rem + 8.45vw, 26.25rem);
+    padding: {
+      inline: 1.8em;
+      block: 1.8em 2.3em;
+    }
+    border: {
+      radius: 0.94em;
+      radius: clamp(0.94em, 0.61em + 1.41vw, 1.88em);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.icon {
+  &-star {
+    @include flex($center: true, $jc: true, $ai: true);
+    background: $buttonRateBg;
+    color: $buttonRateColor;
+    padding: .9em;
+    border: {
+      radius: 50%;
+    }
+    width: max-content;
+  }
+}

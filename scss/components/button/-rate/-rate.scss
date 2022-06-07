@@ -1,0 +1,35 @@
+// ****************************************************************************
+// *                               001.#IMPORT RULES                          *
+// ****************************************************************************
+@import "_hover/_hover";
+@import "_focus/_focus";
+
+// ****************************************************************************
+// *                               002.#BUTTON-RATE                           *
+// ****************************************************************************
+.button {
+  &-rate {
+    $equalSizeFallback: 3em;
+    $equalSize: clamp(3em, 2.89em + 0.45vw, 3.3em);
+
+    width: $equalSizeFallback;
+    height: $equalSizeFallback;
+    width: $equalSize;
+    height: $equalSize;
+    line: {
+      height: $equalSize;
+    }
+    background: $buttonRateBg;
+    color: $buttonRateColor;
+    border: {
+      radius: 50%;
+      style: none;
+    }
+    font: {
+      size: 0.94em;
+      size: clamp(0.94em, 0.92em + 0.09vw, 1em);
+      weight: $fw-700;
+    }
+    cursor: pointer;
+  }
+}

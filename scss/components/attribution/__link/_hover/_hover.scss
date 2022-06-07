@@ -2,7 +2,7 @@
   &__link {
     &_hover {
       &:hover {
-        color: red;
+        color: $attributionLinkHoverColor;
       }
     }
   }

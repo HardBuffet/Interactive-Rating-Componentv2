@@ -1,0 +1,12 @@
+.button {
+  &-rate {
+    &_focus {
+      transition: all 0.2s;
+
+      &:focus {
+        background: $buttonRateFocusBg;
+        color: $buttonRateFocusColor;
+      }
+    }
+  }
+}

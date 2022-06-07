@@ -18,13 +18,14 @@
   @if $center {
     @if $jc {justify-content: center;}
     @if $ai {align-items: center;}
+  } @else {
+      @if $ai {align-items: $aiVal;}
+      @if $jc {justify-content: $jcVal;}
   }
 
 // *---------------------------001.002#align-items------------------------*
-  @if $ai {align-items: $aiVal;}
 
 // *---------------------------001.003#justify-content--------------------*
-  @if $jc {justify-content: $jcVal;}
 
 // *---------------------------001.004#direction--------------------------*
   @if $dir {flex-direction: $dirVal;}

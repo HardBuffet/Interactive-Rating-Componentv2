@@ -14,6 +14,37 @@ body {
   color: $pageColor;
   font: {
     family: $primaryFont;
-    size: 0.9375rem;
+    size: 0.88rem;
+    size: clamp(0.88rem, 0.84rem + 0.18vw, 1rem);
   }
+  line: {
+    height: 1.4rem;
+    height: clamp(1.4rem, 1.33rem + 0.3vw, 1.6rem);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headingColor;
+}
+
+h2 {
+  font: {
+    size: 1.5rem;
+    size: clamp(1.5rem, 1.38rem + 0.5vw, 1.85rem);
+  }
+  margin: {
+    $y: .6em;
+
+    top: $y;
+    bottom: $y;
+  }
+}
+
+p {
+  color: $paragraphColor;
 }

@@ -1,0 +1,7 @@
+.card {
+  &-feedback {
+    &__buttons {
+      @include flex($jc: true);
+    }
+  }
+}

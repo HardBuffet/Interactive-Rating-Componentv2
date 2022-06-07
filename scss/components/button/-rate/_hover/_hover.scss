@@ -1,0 +1,12 @@
+.button {
+  &-rate {
+    &_hover {
+      transition: all 0.2s;
+
+      &:hover {
+        background: $buttonRateHoverBg;
+        color: $buttonRateHoverColor;
+      }
+    }
+  }
+}

@@ -3,6 +3,8 @@
 // ****************************************************************************
 // *---------------------------001.001#primary--------------------------------*
 $orange: hsl(25, 97%, 53%);
+$purple: hsl(270, 100%, 66.275%);
+$red: hsl(0, 100%, 50%);
 
 // *---------------------------001.002#neutral--------------------------------*
 $white: hsl(0, 0%, 100%);
@@ -10,13 +12,44 @@ $black: hsl(0, 0%, 0%);
 $lightGrey: hsl(217, 12%, 63%);
 $mediumGrey: hsl(216, 12%, 54%);
 $darkBlue: hsl(213, 19%, 18%);
+$middleDarkBlue: hsl(212.31, 19.403%, 13.137%);
 $veryDarkBlue: hsl(216, 12%, 8%);
 
-// *---------------------------001.002.#components----------------------------*
-// *---------------------------001.002.001#page-------------------------------*
-$pageBg: $white;
-$pageColor: $black;
+// ****************************************************************************
+// *                               002.#COMPONENTS                            *
+// ****************************************************************************
+// *---------------------------002.001#page-----------------------------------*
+$pageBg: $veryDarkBlue;
+$pageColor: $white;
 
-// *---------------------------001.002.002#attribution------------------------*
+// *---------------------------002.002#attribution----------------------------*
 $attributionBg: $black;
 $attributionColor: $white;
+$attributionLinkColor: $purple;
+$attributionLinkHoverColor: $red;
+
+// *---------------------------002.003#card-feedback--------------------------*
+$cardFeedbackBg: $middleDarkBlue;
+
+// *---------------------------002.004#button-submit--------------------------*
+$buttonSubmitBg: $orange;
+$buttonSubmitColor: $white;
+$buttonSubmitHoverBg: $white;
+$buttonSubmitHoverColor: $orange;
+
+// *---------------------------002.005#button-rate----------------------------*
+$buttonRateBg: $darkBlue;
+$buttonRateColor: $lightGrey;
+$buttonRateHoverBg: $mediumGrey;
+$buttonRateHoverColor: $white;
+$buttonRateFocusBg: $orange;
+$buttonRateFocusColor: $white;
+
+// ****************************************************************************
+// *                               003.#TAGS                                  *
+// ****************************************************************************
+// *---------------------------003.001#heading--------------------------------*
+$headingColor: $white;
+
+// *---------------------------003.002#paragraph--------------------------*
+$paragraphColor: $lightGrey;

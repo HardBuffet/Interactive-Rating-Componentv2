@@ -2,3 +2,31 @@
 // *                               001.#IMPORT RULES                          *
 // ****************************************************************************
 @import "_hover/_hover";
+
+// ****************************************************************************
+// *                               002.#BUTTON-SUBMIT                         *
+// ****************************************************************************
+.button {
+  &-submit {
+    background: $buttonSubmitBg;
+    color: $buttonSubmitColor;
+    padding: {
+      block: 1em;
+      inline: 1.5em;
+    }
+    border: {
+      radius: 30px;
+      style: none;
+    }
+    font: {
+      weight: $fw-700;
+    }
+    letter: {
+      spacing: 2px;
+    }
+    box: {
+      shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    cursor: pointer;
+  }
+}

@@ -8,10 +8,33 @@
 }
 
 body {
-  background: white;
-  color: black;
+  background: #121417;
+  color: white;
   font-family: "Overpass", sans-serif;
-  font-size: 0.9375rem;
+  font-size: 0.88rem;
+  font-size: clamp(0.88rem, 0.84rem + 0.18vw, 1rem);
+  line-height: 1.4rem;
+  line-height: clamp(1.4rem, 1.33rem + 0.3vw, 1.6rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.38rem + 0.5vw, 1.85rem);
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+p {
+  color: #959eac;
 }
 
 .sr-only {
@@ -28,6 +51,15 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121417;
+  color: white;
+  min-height: 100vh;
 }
 
 .attribution__link_hover:hover {
@@ -48,6 +80,95 @@ body {
   color: white;
   text-align: center;
   padding: 0.25em;
+}
+
+.card-feedback__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 1em;
+}
+
+.card-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  background: #1b2128;
+  width: 20.63rem;
+  width: clamp(20.63rem, 18.64rem + 8.45vw, 26.25rem);
+  padding-inline: 1.8em;
+  padding-block: 1.8em 2.3em;
+  border-radius: 0.94em;
+  border-radius: clamp(0.94em, 0.61em + 1.41vw, 1.88em);
+}
+
+.icon-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #252d37;
+  color: #959eac;
+  padding: 0.9em;
+  border-radius: 50%;
+  width: max-content;
+}
+
+.button-rate_hover {
+  transition: all 0.2s;
+}
+.button-rate_hover:hover {
+  background: #7c8798;
+  color: white;
+}
+
+.button-rate_focus {
+  transition: all 0.2s;
+}
+.button-rate_focus:focus {
+  background: #fb7413;
+  color: white;
+}
+
+.button-rate {
+  width: 3em;
+  height: 3em;
+  width: clamp(3em, 2.89em + 0.45vw, 3.3em);
+  height: clamp(3em, 2.89em + 0.45vw, 3.3em);
+  line-height: clamp(3em, 2.89em + 0.45vw, 3.3em);
+  background: #252d37;
+  color: #959eac;
+  border-radius: 50%;
+  border-style: none;
+  font-size: 0.94em;
+  font-size: clamp(0.94em, 0.92em + 0.09vw, 1em);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-submit_hover {
+  transition: all 0.2s;
+}
+.button-submit_hover:hover {
+  background: white;
+  color: #fb7413;
+}
+
+.button-submit {
+  background: #fb7413;
+  color: white;
+  padding-block: 1em;
+  padding-inline: 1.5em;
+  border-radius: 30px;
+  border-style: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

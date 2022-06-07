@@ -4,11 +4,14 @@
 @import "__link/__link";
 @import "__note/__note";
 
+// ****************************************************************************
+// *                               002.#ATTRIBUTION                           *
+// ****************************************************************************
 .attribution {
   background: $attributionBg;
   color: $attributionColor;
   text: {
     align: center;
   }
-  padding: 0.25em;
+  padding: .25em;
 }
