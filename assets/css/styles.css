@@ -46,13 +46,6 @@ p {
   z-index: -999;
 }
 
-.page__attribution {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
 .page {
   display: flex;
   justify-content: center;
@@ -62,36 +55,11 @@ p {
   min-height: 100vh;
 }
 
-.attribution__link_hover:hover {
-  color: red;
-}
-
-.attribution__link {
-  color: #a953ff;
-}
-
-.attribution__note {
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-}
-
-.attribution {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 0.25em;
-}
-
-.card-feedback__buttons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-feedback__form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 1em;
+.page__attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .card-feedback {
@@ -107,6 +75,18 @@ p {
   border-radius: clamp(0.94em, 0.61em + 1.41vw, 1.88em);
 }
 
+.card-feedback__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 1em;
+}
+
 .icon-star {
   display: flex;
   justify-content: center;
@@ -116,22 +96,6 @@ p {
   padding: 0.9em;
   border-radius: 50%;
   width: max-content;
-}
-
-.button-rate_hover {
-  transition: all 0.2s;
-}
-.button-rate_hover:hover {
-  background: #7c8798;
-  color: white;
-}
-
-.button-rate_focus {
-  transition: all 0.2s;
-}
-.button-rate_focus:focus {
-  background: #fb7413;
-  color: white;
 }
 
 .button-rate {
@@ -150,12 +114,20 @@ p {
   cursor: pointer;
 }
 
-.button-submit_hover {
+.button-rate_hover {
   transition: all 0.2s;
 }
-.button-submit_hover:hover {
-  background: white;
-  color: #fb7413;
+.button-rate_hover:hover {
+  background: #7c8798;
+  color: white;
+}
+
+.button-rate_focus {
+  transition: all 0.2s;
+}
+.button-rate_focus:focus {
+  background: #fb7413;
+  color: white;
 }
 
 .button-submit {
@@ -169,6 +141,34 @@ p {
   letter-spacing: 2px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+}
+
+.button-submit_hover {
+  transition: all 0.2s;
+}
+.button-submit_hover:hover {
+  background: white;
+  color: #fb7413;
+}
+
+.attribution {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 0.25em;
+}
+
+.attribution__link {
+  color: #a953ff;
+}
+
+.attribution__link_hover:hover {
+  color: red;
+}
+
+.attribution__note {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
