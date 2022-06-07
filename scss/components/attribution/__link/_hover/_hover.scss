@@ -1,0 +1,9 @@
+.attribution {
+  &__link {
+    &_hover {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}

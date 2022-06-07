@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Frontend Mentor | Interactive rating component
+    link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
+    link(rel="stylesheet" href="assets/css/styles.css")
+    script(src="js/script.js" defer)
+  body.page
+    header
+      h1.sr-only Give us feedback.
+    main
+      .card-feedback
+        template
+          .card-feedback__output
+            img(src="images/illustration-thank-you.svg" alt="")
+            p.utilities.utilities_color_orange.utilities_bg_medium-grey.utilities_pad-1 You selected 4 out of 5
+          .card-feedback__text
+            h2 Thank you!
+            p We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        .icon-star
+          img(src="images/icon-star.svg" alt="")
+        .card-feedback__text
+          h2 How did we do?
+          p Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        form(action="javascript:void(0);")
+          .card-feedback__buttons
+            input(type="button" value="1").button-rate
+            input(type="button" value="2").button-rate
+            input(type="button" value="3").button-rate
+            input(type="button" value="4").button-rate
+            input(type="button" value="5").button-rate
+          input(type="submit" value="SUBMIT").button-submit.button-submit_hover
+      footer.attribution.page__attribution
+        p.attribution__note Challenge by
+          |
+          |
+          a.attribution__link.attribution__link_hover(href="https://www.frontendmentor.io?ref=challenge" target="_blank")
+            | Frontend Mentor
+        p.attribution__note Coded by
+          |
+          |
+          a.attribution__link.attribution__link_hover(href="https://www.frontendmentor.io/profile/HardBuffet")
+            | HardBuffet

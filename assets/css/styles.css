@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  color: black;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375rem;
+}
+
+.sr-only {
+  position: fixed;
+  left: -10000vw;
+  top: -10000vh;
+  color: transparent;
+  background: transparent;
+  z-index: -999;
+}
+
+.page__attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.attribution__link_hover:hover {
+  color: red;
+}
+
+.attribution__link {
+  color: #a953ff;
+}
+
+.attribution__note {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.attribution {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 0.25em;
+}
+
+/*# sourceMappingURL=styles.css.map */
