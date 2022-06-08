@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-with-scss-and-bem-SzEFJdUg8i)
 - Live Site URL: [GitHub Pages](https://hardbuffet.github.io/Interactive-Rating-Componentv2/)
 
 ## My process
