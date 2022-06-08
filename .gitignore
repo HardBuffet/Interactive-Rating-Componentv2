@@ -16,3 +16,4 @@
 .prettierignore
 node_modules/
 challenge/
+scss/components/button/-submit/_active
